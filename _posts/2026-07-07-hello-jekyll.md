@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "你好，Jekyll！"
 date: 2024-08-01 15:00:00 +0800
 categories: 技术
