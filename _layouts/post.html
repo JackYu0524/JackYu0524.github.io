@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article>
+  <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
+  <p class="meta">发布于 {% raw %}{{ page.date | date: "%Y-%m-%d" }}{% endraw %}</p>
+  <div class="content">
+    {% raw %}{{ content }}{% endraw %}
+  </div>
+</article>
