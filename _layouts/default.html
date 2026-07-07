@@ -1,12 +1,10 @@
----
-layout: default
-title: 首页
----
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
   <header>
@@ -16,11 +14,19 @@ title: 首页
       <a href="/about/">关于</a>
     </nav>
   </header>
+
   <main>
     {{ content }}
   </main>
+
   <footer>
     <p>© {{ site.time | date: '%Y' }} {{ site.author }}. Powered by Jekyll & GitHub Pages.</p>
   </footer>
+
+  <!-- Mermaid 支持 -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true });
+  </script>
 </body>
 </html>
